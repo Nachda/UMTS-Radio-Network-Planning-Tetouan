@@ -1,0 +1,34 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.log
+*.swp
+*~
+
+# Python caches, if scripts are added later
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# GIS temporary files and caches
+*.aux.xml
+*.ovr
+*.qmd
+*.lock
+
+# Raw geospatial data: do not commit by default
+01_Data/Raw/*
+
+# Processed geospatial data: review file size before committing
+# 01_Data/Processed/*
+
+# Atoll temporary files
+# Review actual Atoll file extensions before excluding anything
+!01_Data/Raw/.gitkeep
