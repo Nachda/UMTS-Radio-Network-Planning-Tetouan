@@ -1,0 +1,183 @@
+﻿GLOBAL_MAPPER_SCRIPT VERSION="1.00" FILENAME="C:\Users\Nourouddine Nachda\Documents\UMTS-Radio-Network-Planning-Tetouan\05_Global_Mapper\Tetouan_GlobalMapper.gmw" \
+	 GM_VERSION="26.0.2.b121824" TIMESTAMP="2026-11-11T18:45:25Z" CODE_PAGE="UTF-8" TEMP_DIR="C:\Users\NOUROU~1\AppData\Local\Temp\GlobalMapper\"
+SET_BG_COLOR COLOR="RGB(255,255,255)"
+UNLOAD_ALL
+IMPORT_OSM_TILE LAT_LON_BOUNDS="-5.45000000,35.45000000,-5.20000000,35.65000000" OSM_BASE_URL="http://data.bluemarblegeo.com/datasets/SRTM_30m/" \
+	 OSM_DESC="SRTM Worldwide Elevation Data (1-arc-second Resolution, SRTM Plus V3)" \
+	 OSM_FILE_EXT="gmg" OSM_NUM_ZOOM_LEVELS="11" TILE_SIZE="1024" SOURCE_TYPE="OSM" METADATA_URL="https://lpdaac.usgs.gov/products/srtmgl1nv003/" \
+	 LABEL_FIELD_FORCE_OVERWRITE="NO" LABEL_FORMAT_NUMBERS="YES" LABEL_PRECISION="-1" \
+	 LABEL_REMOVE_TRAILING_ZEROS="YES" LABEL_USE_SCIENTIFIC_NOTATION="NO" CODE_PAGE="1252" \
+	 HIDDEN="YES" BAND_RANGE="-11.0,1281.300048828125,ALL,0" CLIP_COLLAR="NONE" SAMPLING_METHOD="BILINEAR" \
+	 ELEV_UNITS="METERS"
+IMPORT_WMS LAT_LON_BOUNDS="-5.45000000,35.45000000,-5.20000000,35.66000000" SOURCE_DESC="World Street Map" \
+	 WMS_SERVER_URL="https://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/WMTS" \
+	 WMS_SERVICE="WMTS" WMS_LAYER="World_Street_Map" WMS_STYLE="" WMS_IS_TILED="YES" \
+	 WMS_REFRESH_TIME="20160" METADATA_URL="https://www.arcgis.com/home/item.html?id=3b93337983e9436f8db950e38a8629af" \
+	 LABEL_FIELD_FORCE_OVERWRITE="NO" LABEL_FORMAT_NUMBERS="YES" LABEL_PRECISION="-1" \
+	 LABEL_REMOVE_TRAILING_ZEROS="YES" LABEL_USE_SCIENTIFIC_NOTATION="NO" CODE_PAGE="1252" \
+	 HIDDEN="YES" BAND_RANGE="-32000.0,32000.0,ALL,0" CLIP_COLLAR="NONE" SAMPLING_METHOD="BICUBIC" \
+	 AUTO_CONTRAST="NO" CONTRAST_SHARED="NO" CONTRAST_MODE="NONE" TEXTURE_MAP="NO"
+IMPORT FILENAME="C:\Users\Nourouddine Nachda\Documents\UMTS-Radio-Network-Planning-Tetouan\01_Data\Processed\MNT_Tetouan_SRTM.tif" \
+	 TYPE="GEOTIFF" LABEL_FIELD_FORCE_OVERWRITE="NO" LABEL_FORMAT_NUMBERS="YES" LABEL_PRECISION="-1" \
+	 LABEL_REMOVE_TRAILING_ZEROS="YES" LABEL_USE_SCIENTIFIC_NOTATION="NO" CODE_PAGE="1252" \
+	 HIDDEN="YES" HISTOGRAM="ELEV:MNT_Tetouan_SRTM.tif|15|-13,70,201967;70,153,73662;153,236,57880;236,319,41315;319,402,32874;402,485,29729;485,568,17962;568,651,11099;651,734,10101;734,817,11403;817,900,13740;900,983,9214;983,1066,4767;1066,1149,2437;1149,1233,914" \
+	 BAND_RANGE="-12.56898021697998047,1229.005859375,NO_DATA,1,-32767.0" CLIP_COLLAR="NONE" \
+	 SAMPLING_METHOD="BILINEAR" ELEV_UNITS="METERS" AUTOSTYLE_COLOR="1841891,32767,14070474"
+IMPORT FILENAME="C:\Users\Nourouddine Nachda\Documents\UMTS-Radio-Network-Planning-Tetouan\01_Data\Processed\MNT_Tetouan_UTM30N.tif" \
+	 TYPE="GEOTIFF" LABEL_FIELD_FORCE_OVERWRITE="NO" LABEL_FORMAT_NUMBERS="YES" LABEL_PRECISION="-1" \
+	 LABEL_REMOVE_TRAILING_ZEROS="YES" LABEL_USE_SCIENTIFIC_NOTATION="NO" CODE_PAGE="1252" \
+	 HIDDEN="YES" HISTOGRAM="ELEV:MNT_Tetouan_UTM30N.tif|15|-11,72,140962;72,155,50874;155,238,40446;238,321,29272;321,404,22536;404,487,20700;487,570,12315;570,653,7801;653,736,7192;736,819,7974;819,902,9341;902,985,6237;985,1068,3185;1068,1151,1668;1151,1235,582" \
+	 BAND_RANGE="-10.37231922149658203,1229.34228515625,NO_DATA,1,-32767.0" CLIP_COLLAR="NONE" \
+	 SAMPLING_METHOD="BILINEAR" ELEV_UNITS="METERS" AUTOSTYLE_COLOR="7323645,11827231,1841891"
+IMPORT FILENAME="C:\Users\Nourouddine Nachda\Documents\UMTS-Radio-Network-Planning-Tetouan\01_Data\Processed\MNT_Tetouan_UTM30N_16bit.tif" \
+	 TYPE="GEOTIFF" LABEL_FIELD_FORCE_OVERWRITE="NO" LABEL_FORMAT_NUMBERS="YES" LABEL_PRECISION="-1" \
+	 LABEL_REMOVE_TRAILING_ZEROS="YES" LABEL_USE_SCIENTIFIC_NOTATION="NO" CODE_PAGE="1252" \
+	 BAND_RANGE="-9.0,1227.0,NO_DATA,0,-32767" CLIP_COLLAR="NONE" SAMPLING_METHOD="BILINEAR" \
+	 ELEV_UNITS="METERS" AUTOSTYLE_COLOR="14929574,11827231,32767"
+IMPORT FILENAME="C:\Users\Nourouddine Nachda\Documents\UMTS-Radio-Network-Planning-Tetouan\terrascope_download_20261104_193545\WORLDCOVER\ESA_WORLDCOVER_10M_2021_V200\MAP\ESA_WorldCover_10m_2021_v200_N33W006_Map\ESA_WorldCover_10m_2021_v200_N33W006_Map.tif" \
+	 TYPE="GEOTIFF" LABEL_FIELD_FORCE_OVERWRITE="NO" LABEL_FORMAT_NUMBERS="YES" LABEL_PRECISION="-1" \
+	 LABEL_REMOVE_TRAILING_ZEROS="YES" LABEL_USE_SCIENTIFIC_NOTATION="NO" CODE_PAGE="1252" \
+	 CLIP_COLLAR="NONE" SAMPLING_METHOD="NEAREST_NEIGHBOR" AUTO_CONTRAST="NO" CONTRAST_SHARED="YES" \
+	 CONTRAST_MODE="NONE" TEXTURE_MAP="NO" AUTOSTYLE_COLOR="10066683,32767,11827231"
+DEFINE_PROJ PROJ_NAME="UTM_ZONE30_WGS84"
+Projection     UTM
+Datum          WGS84
+Zunits         NO
+Units          METERS
+Zone           30
+Xshift         0.000000
+Yshift         0.000000
+Parameters
+END_DEFINE_PROJ
+LOAD_PROJECTION PROJ_NAME="UTM_ZONE30_WGS84"
+SET_VIEW GLOBAL_BOUNDS="148638.274424,3763578.514614,666877.586934,4002022.301924"
+SET_VERT_DISP_OPTS SHADER_NAME="Atlas Shader" AMBIENT_LIGHT_LEVEL="0" VERT_EXAG="3" \
+	 LIGHT_ALTITUDE="45" LIGHT_AZIMUTH="45" LIGHT_NUM_SOURCES="1" LIGHT_BLENDING_ALGORITHM="0" \
+	 SLOPE_ALGORITHM="0" ENABLE_HILL_SHADING="YES" SHADE_DARKNESS="0" SHADE_HIGHLIGHT="0" \
+	 ENABLE_WATER="NO" WATER_ALPHA="128" WATER_LEVEL="0" WATER_COLOR="RGB(0,0,255)"
+SET_SHADER_OPTS HSV="HSV=0.000000,1.000000,1.000000,360.000000"
+
+/************ DEFINE MAP LAYOUT *************/
+MAP_LAYOUT
+ElevLegendBgColor=16777215
+ElevLegendTranslucency=384
+ElevLegendFont=~0~534799372~0.000~0~0~16777215~-1
+ElevLegendVisible=1
+ElevLegendDisplayType=1
+ElevLegendDisplayUnits=1
+ElevLegendDisplayUnitsStr=
+ElevLegendCustomRangeMin=0
+ElevLegendCustomRangeMax=0
+ElevLegendRangeType=0
+ElevLegendTitle=
+ElevLegendSlopePercent=0
+
+DEFINE_PROJ_ELEV_LEGEND
+Projection     Fixed Screen Position
+Datum          D_ADINDAN
+Zunits         NO
+Units          RADIAN
+Xshift         0.000000
+Yshift         0.000000
+Parameters
+0.000000000 /* horz offset
+0.000000000 /* horz offset type (0 - left, 1 - right, 2 - center)
+0.000000000 /* horz offset value type (0 - inches, 1 - % width, 2 - deg lon)
+0.000000000 /* vert offset
+0.000000000 /* vert offset type (0 - top, 1 - bottom, 2 - center)
+0.000000000 /* vert offset value type (0 - inches, 1 - % width, 2 - deg lat)
+100.000000000 /* size value
+2.000000000 /* size value type (0 - % width, 1 - % height, 2 - pixel)
+1.000000000 /* always on top
+0.000000000 /* shrink to fit
+END_DEFINE_PROJ
+
+MapLegendType=0
+MapLegendBgColor=16776959
+MapLegendBorderStyle=0,2097152,0.0
+MapLegendTranslucency=512
+MapLegendFont=~0~534799368~0.000~0~0~16777215~-1
+MapLegendFooterFont=~0~534799372~0.000~0~0~16777215~-1
+MapLegendHeaderFont=~0~534799372~0.000~0~0~16777215~-1
+MapLegendHeader=
+MapLegendFooter=
+MapLegendNumColumns=1
+MapLegendLabelAttr=
+MapLegendUseNaturalSort=0
+MapLegendUseGroups=0
+
+DEFINE_PROJ_MAP_LEGEND
+Projection     Fixed Screen Position
+Datum          D_ADINDAN
+Zunits         NO
+Units          RADIAN
+Xshift         0.000000
+Yshift         0.000000
+Parameters
+0.000000000 /* horz offset
+1.000000000 /* horz offset type (0 - left, 1 - right, 2 - center)
+0.000000000 /* horz offset value type (0 - inches, 1 - % width, 2 - deg lon)
+0.000000000 /* vert offset
+1.000000000 /* vert offset type (0 - top, 1 - bottom, 2 - center)
+0.000000000 /* vert offset value type (0 - inches, 1 - % width, 2 - deg lat)
+0.000000000 /* size value
+2.000000000 /* size value type (0 - % width, 1 - % height, 2 - pixel)
+1.000000000 /* always on top
+1.000000000 /* shrink to fit
+END_DEFINE_PROJ
+
+NorthArrowEnabled=0
+NorthArrowSymbol=
+NorthArrowSymbolScale=1.000000
+NorthArrowTranslucency=384
+
+DEFINE_PROJ_NORTH_ARROW
+Projection     Fixed Screen Position
+Datum          D_ADINDAN
+Zunits         NO
+Units          RADIAN
+Xshift         0.000000
+Yshift         0.000000
+Parameters
+0.000000000 /* horz offset
+1.000000000 /* horz offset type (0 - left, 1 - right, 2 - center)
+0.000000000 /* horz offset value type (0 - inches, 1 - % width, 2 - deg lon)
+0.000000000 /* vert offset
+0.000000000 /* vert offset type (0 - top, 1 - bottom, 2 - center)
+0.000000000 /* vert offset value type (0 - inches, 1 - % width, 2 - deg lat)
+100.000000000 /* size value
+2.000000000 /* size value type (0 - % width, 1 - % height, 2 - pixel)
+1.000000000 /* always on top
+0.000000000 /* shrink to fit
+END_DEFINE_PROJ
+
+ScaleBarBgColor=16777215
+ScaleBarTranslucency=384
+ScaleBarFont=~0~534799372~0.000~0~0~16777215~-1
+ScaleVisible=1
+
+DEFINE_PROJ_SCALE
+Projection     Fixed Screen Position
+Datum          D_ADINDAN
+Zunits         NO
+Units          RADIAN
+Xshift         0.000000
+Yshift         0.000000
+Parameters
+0.000000000 /* horz offset
+0.000000000 /* horz offset type (0 - left, 1 - right, 2 - center)
+0.000000000 /* horz offset value type (0 - inches, 1 - % width, 2 - deg lon)
+0.000000000 /* vert offset
+1.000000000 /* vert offset type (0 - top, 1 - bottom, 2 - center)
+0.000000000 /* vert offset value type (0 - inches, 1 - % width, 2 - deg lat)
+0.000000000 /* size value
+2.000000000 /* size value type (0 - % width, 1 - % height, 2 - pixel)
+1.000000000 /* always on top
+0.000000000 /* shrink to fit
+END_DEFINE_PROJ
+
+GridDisplayType=0
+GridDisplayShowAll=0
+GridSpacingLatLon=0.00000000000000000
+GridSpacingProjected=0.00000000000000000
+END_MAP_LAYOUT

@@ -1,0 +1,13 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  File "Clutter_Tetouan_UTM30N.grc"
+  Type "RASTER"
+  (277641.933865, 3947894.409706) (0, 0) Label "NW",
+  (277641.933865, 3925192.612305) (0, 594) Label "SW",
+  (300802.353435, 3947894.409706) (606, 0) Label "NE",
+  (300802.353435, 3925192.612305) (606, 594) Label "SE"
+  CoordSys Earth Projection 8, 104, "m", -3, 0, 0.9996, 500000, 0
+  Units "m"
